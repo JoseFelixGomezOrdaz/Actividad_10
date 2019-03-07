@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="576dp"
+        android:layout_height="295dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="595dp"
+            android:layout_height="87dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_numero1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Numero 1" />
+
+            <EditText
+                android:id="@+id/et_numero1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btn_suma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Suma"
+                android:text="@string/suma" />
+
+            <Button
+                android:id="@+id/btn_resta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Resta"
+                android:text="@string/resta" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="589dp"
+            android:layout_height="85dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_numero2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Numero 2" />
+
+            <EditText
+                android:id="@+id/et_numero2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btn_multiplicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Mult"
+                android:text="@string/mult" />
+
+            <Button
+                android:id="@+id/btn_division"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Division"
+                android:text="@string/division" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="598dp"
+            android:layout_height="136dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Resultado" />
+
+            <EditText
+                android:id="@+id/et_resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btn_modulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Modulo"
+                android:text="%" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
